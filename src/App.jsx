@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Player from "./components/Player/Player";
 import AddPlayerForm from "./components/AddPlayer/AddPlayerForm";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [players, setPlayers] = useState([
@@ -84,6 +85,7 @@ const App = () => {
         );
       })}
       <AddPlayerForm addPlayer={handleAddPlayer} />
+      <Footer />
     </div>
   );
 }
